@@ -1,0 +1,8 @@
+node_modules/
+out/
+.whisper/
+*.wav
+public/*.mp4
+public/*.captions.json
+mg-suggestions.json
+.DS_Store
