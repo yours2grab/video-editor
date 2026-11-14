@@ -17,9 +17,6 @@ interface Caption {
 const MERGE_PATTERNS: Array<{parts: string[]; merged: string}> = [
   {parts: ['LL', 'M'], merged: 'LLM'},
   {parts: ['ll', 'm'], merged: 'LLM'},
-  {parts: ['Suk', 'ana'], merged: 'Sucana'},
-  {parts: ['suk', 'ana'], merged: 'Sucana'},
-  {parts: ['Suc', 'ana'], merged: 'Sucana'},
   {parts: ['G', 'PT'], merged: 'GPT'},
   {parts: ['Chat', 'G', 'PT'], merged: 'ChatGPT'},
   {parts: ['J', 'SON'], merged: 'JSON'},

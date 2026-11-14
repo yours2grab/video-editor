@@ -1,4 +1,4 @@
-# Sucana Video Editor
+# Video Editor
 
 A Claude Code skill that turns raw video recordings into polished content with motion graphics. Built on Remotion + FFmpeg + whisper.cpp.
 
@@ -37,8 +37,8 @@ Types of MGs:
 ## Setup
 
 ```bash
-git clone https://github.com/yours2grab/sucana-video-editor.git
-cd sucana-video-editor
+git clone https://github.com/yours2grab/video-editor.git
+cd video-editor
 npm install
 ```
 
@@ -83,7 +83,7 @@ npx remotion render FinalVideo out/final.mp4 --codec h264 --crf 18
 ## Project Structure
 
 ```
-sucana-video-editor/
+video-editor/
 ├── public/                    # Drop your video here as source.mp4
 ├── src/
 │   ├── Root.tsx               # Composition definitions (Claude updates per project)
@@ -133,7 +133,7 @@ All motion graphics pull colors from this file via the `useBrand()` hook.
 - Uses whisper.cpp with Metal GPU acceleration on Mac
 - `base.en` model (fast + good quality)
 - Word-level timestamps for precise MG placement
-- Auto-merges split words (LLM, JSON, API, Sucana, GPT, ChatGPT)
+- Auto-merges split words (LLM, JSON, API, GPT, ChatGPT)
 
 ### Smart Trim (`scripts/smart-trim.ts`)
 - Detects dead air (>3s silence gaps)
